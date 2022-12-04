@@ -31,13 +31,13 @@
           }
           
           .button1 {
-            background-color: rgb(236, 250, 37); 
+            background-color: rgb(246, 255, 113); 
             color: black; 
-            border: 2px solid #4CAF50;
+            border: 2px solid #cd00b5;
             font-size: 15px;
             height:50px;
             width:220px;
-            border-radius: 25%;
+            border-radius: 40%;
           }
 
           .button2 {
@@ -66,17 +66,8 @@
             {% for j in range(5)%}
               {% set url = "/Questions/" ~ j ~ "/" ~ i %}
               <a href={{url}}><button class="button button2">{{points + i*100}}</button></a>
-              {% if pressed == 1 %}
-                <button onclick="myFunction()">Click me</button>
-              {% endif %}
             {% endfor %}
           {% endfor %}
-
-          <script>
-            function buttonPressed() {
-              document.getElementById("demo").innerHTML = "Hello World";
-            }
-            </script>
 
           </body>
           </html>

@@ -1,1 +1,133 @@
-Soccer Players                          World Cup 2022      Leagues      Clubs    Icons  
+  
+class question:
+
+    def __init__(self, question, answer, row, col, marked):
+        self.question = question
+        self.answer = answer
+        self.row = row #postion
+        point = [100,200,300]
+        self.rowpoints = point[self.row]
+        self.col = col #position
+        cat = ["player", "world cup 2022", "leagues", "clubs", "icons"]
+        self.category = cat[self.col]
+        self.mark = marked
+
+        
+
+class player:
+    def __init__(self, name, score):
+        self.name = name
+        self.score = score
+
+'''
+starter = 0
+def whogoes(guy1,guy2):
+  if starter %2 == 0:
+    #player one goes 
+      #if correct player on goes
+        whogoes(p1,p2)
+#get answer
+p1 = player
+p2 = player 
+'''
+
+#default = True
+Q1 = question("Who is this player ?", "neymar", 0,0, True)
+Q2 = question("What country won the last world cup (2018)", "france", 0,1,True )
+Q3 = question("What league is this ?", "premier league", 0,2, True)
+Q4 = question("Who is this player ?", "ronaldo", 1,0, True)
+Q5 = question("What country is hosting this years world cup ?", "qatar", 1,1, True)
+Q6 = question("What league is this ?", "liga mx", 1,2, True)
+Q7 = question("Who is this player ?", "messi", 2,0, True)
+Q8 = question("What countries were playing int the first match of this years world cup ?", "qatar vs ecuador", 2,1, True)
+Q9 = question("What league is this ?", "liga santander", 2,2, True)
+
+exboard = ["Q1" , "Q2", "Q3",
+           "Q4", "Q5", "Q6",
+           "Q7", "Q8", "Q9"]
+
+realboard = [Q1 , Q2, Q3,
+             Q4, Q5, Q6,
+             Q7, Q8, Q9]
+
+demolist = [["Who is this player ?"], ["What country won the last world cup (2018)"], ["What league is this ?"],
+            ["Who is this player ?"], ["What country is hosting this years world cup ?"], ["What league is this ?"],
+            ["Who is this player ?"], ["What countries were playing int the first match of this years world cup ?"], ["What league is this ?"]]
+
+demoans = [["neymar"], ["france"], ["premier league"],
+            ["ronaldo"], ["qatar"], ["liga mx"],
+            ["messi"], ["qatar vs ecuador"], ["liga santander"]]
+
+player1 = player("israel", 0)
+player2 = player("joe", 0)
+
+winner = None 
+gameRunning = True
+
+#print board
+def printBoard(board):
+    print(exboard[0] + " | " + exboard[1] + " | " + exboard[2])
+    print(exboard[3] + " | " + exboard[4] + " | " + exboard[5])
+    print(exboard[6] + " | " + exboard[7] + " | " + exboard[8])
+#printBoard(exboard)
+
+#returns if position is marked
+def isunmarked(inp,board,demo):
+    
+    for x in range(len(board)):
+        if inp == x and demo[inp].mark == True:
+            temp = inp
+            demo[temp].mark = False
+            return board[temp]
+        elif inp == x and demo[inp].mark == False:
+            return "marked"
+
+def switchplayer():
+    return
+
+#proceed to question
+def questionAcess(x, currplyr,q,y):
+    print(x.question)
+    plyrinp = input("Enter your answer: ")
+    if (plyrinp == x.answer):
+        print("correct")
+        #update players score
+        currplyr.score += x.rowpoints
+        print(currplyr.name)
+        print(currplyr.score)
+
+    else:
+        print("wrong answer other players turn")
+        print(x.question)
+        plyrinp = input("Enter your answer: ")
+        if (plyrinp == x.answer):
+            print("correct")
+            currplyr.score += x.rowpoints  
+            print(currplyr.name)
+            print(currplyr.score)    
+        else:
+            playerInput(q,y)
+
+        
+
+#player turn 
+
+
+
+# take player input
+def playerInput(board, demo):
+   count = 0
+   playerlist = [player1, player2]
+   choice = 0
+   while(count < 9):
+        printBoard(board)
+        inp = int(input("enter the question you want to answer: "))
+        if inp >= 1 and inp <= 9 and board[inp-1] == isunmarked(inp-1, board,demo):
+            questionAcess(demo[inp-1], playerlist[choice%2],board,demo)
+            choice += 1
+            count += 1
+        else:
+            print("invalid input")
+
+playerInput(exboard, realboard)
+
