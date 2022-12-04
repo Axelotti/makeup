@@ -3,7 +3,7 @@ This controls the body of the page
 You can use this to set the background color, margins, etc. as shown below
 */
 body {
-    background-color: #303030;
+    background-color: #0087cf;
     margin-top: 100px;
     margin-left: 10%;
     margin-right: 10%;
@@ -12,7 +12,7 @@ body {
   /* This is used to make profile picture cropped as a circle */
   img {
     border-radius: 10%;
-    width: 200px;
+    width: 100px;
     height: auto;
   }
   
@@ -21,7 +21,7 @@ body {
     margin-top: 20px;
     margin-bottom: 30px;
     font-family: Averta, sans-serif;
-    color: rgb(0, 217, 98);
+    color: rgb(0, 23, 125);
     font-size: 56px;
     line-height: 44px;
     font-weight: 700;

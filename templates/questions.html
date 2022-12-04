@@ -1,0 +1,103 @@
+<!DOCTYPE html> 
+
+<head>
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='second.css') }}">
+<head>
+  
+
+<body>
+    <h1>{{questions[row][column]}}</h1>
+
+    {% if row == 0 and column == 0 %}
+        <img src="https://imageio.forbes.com/specials-images/imageserve/627bd53a3a4d3cd7729717cc/0x0.jpg?format=jpg&crop=1069,1070,x707,y83,safe&height=416&width=416&fit=bounds" style="width:300px;height:300px;"></a>
+    {% endif %}
+
+    {% if row == 0 and column == 1 %}
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg"></a>
+    {% endif %}
+
+    {% if row == 0 and column == 2 %}
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Lionel_Messi_20180626.jpg/640px-Lionel_Messi_20180626.jpg"></a>
+    {% endif %}
+
+    {% if row == 0 and column == 3 %}
+    <img src="https://img.fcbayern.com/image/upload/t_cms-1x1-seo/v1657983627/cms/public/images/fcbayern-com/homepage/saison-21-22/Profis/Lewandowski/220716-lewandowski-fc-barcelona.jpg"  style="width:300px;height:300px;"></a>
+    {% endif %}
+
+    {% if row == 0 and column == 4 %}
+    <img src="https://img.a.transfermarkt.technology/portrait/big/139208-1620651710.jpg?lm=1" ></a>
+    {% endif %}
+
+    {% if row == 2 and column == 0 %}
+    <img src="https://a1.espncdn.com/combiner/i?img=%2Fi%2Fleaguelogos%2Fsoccer%2F500%2F23.png" style="width:300px;height:300px;"></a>
+    {% endif %}
+
+    {% if row == 2 and column == 1 %}
+    <img src="https://play-lh.googleusercontent.com/m9kMaKhGdSBusRBFKgXyPtJQ94oSYmvKLAMVjfXTeSBw2zgKbDSDohRP2nZHfURTvYA=w600-h300-pc0xffffff-pd" style="width:500px;height:300px;"></a>
+    {% endif %}
+
+    {% if row == 2 and column == 2 %}
+    <img src="https://www.pngkey.com/png/detail/321-3214718_la-liga-logo.png" style="width:500px;height:300px;"></a>
+    {% endif %}
+
+    {% if row == 2 and column == 3 %}
+    <img src="https://1000logos.net/wp-content/uploads/2020/09/Bundesliga-Logo-2010.jpg" style="width:500px;height:300px;"></a>
+    {% endif %}
+
+    {% if row == 2 and column == 4 %}
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Liga_NOS_logo.png/764px-Liga_NOS_logo.png"></a>
+    {% endif %}
+
+    {% if row == 3 and column == 0 %}
+    <img src="https://m0.joe.co.uk/wp-content/uploads/2020/09/20203010/psg1.jpg"style="width:400px;height:300px;"></a>
+    {% endif %}
+
+    {% if row == 3 and column == 1 %}
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png"style="width:300px;height:300px;"></a>
+    {% endif %}
+
+    {% if row == 3 and column == 2 %}
+    <img src="https://cdn.thefootballlovers.com/wp-content/uploads/2021/04/manchester-city.jpg" style="width:300px;height:300px;"></a>
+    {% endif %}
+
+    {% if row == 3 and column == 3 %}
+    <img src="http://www.logosquizwalkthrough.com/images/bubble/borussia-dortmund.jpg" style="width:400px;height:300px;"></a>
+    {% endif %}
+
+    {% if row == 3 and column == 4 %}
+    <img src="http://www.logosquizwalkthrough.com/images/bubble/ac-milan.jpg" style="width:400px;height:300px;"></a>
+    {% endif %}
+
+    {% if row == 4 and column == 0 %}
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Pele_by_John_Mathew_Smith.jpg/1200px-Pele_by_John_Mathew_Smith.jpg"></a>
+    {% endif %}
+
+    {% if row == 4 and column == 1 %}
+    <img src="https://cdn.artphotolimited.com/images/5f60bc53bd40b8173f11e855/1000x1000/diego-maradona-playing-for-argentina-in-1986.jpg"></a>
+    {% endif %}
+
+    {% if row == 4 and column == 2 %}
+    <img src="https://cdn.britannica.com/48/142848-050-2A6FC569/Ronaldo-2004.jpg"></a>
+    {% endif %}
+
+    {% if row == 4 and column == 3 %}
+    <img src="https://fcb-abj-pre.s3.amazonaws.com/img/jugadors/213_cruyff.jpg"></a>
+    {% endif %}
+
+    {% if row == 4 and column == 4 %}
+    <img src="https://footballmakeshistory.eu/wp-content/uploads/2020/08/Eusebio.jpg"></a>
+    {% endif %}
+
+    <form  method = "post">
+        <label for="answer">Answer:</label><br>
+        <input type="text" id="answer" name="answer" value=""><br><br>
+        <input type="submit" value="Submit">
+        
+
+      </form>
+
+    
+    </html>
+</html>
+
+

@@ -1,0 +1,25 @@
+1. Who is this player? 
+2. Who is this player? 
+3. Who is this player?
+4. Who is this player? 
+5. Who is this player?  
+1. What country won the last world cup (2018)?
+2. What country is hosting this years world cup?
+3. What countries were playing in the first match of this years world cup? 
+4. What country has the most World Cups? 
+5. What country is know as "project blue lock"? 
+1. From what country is this league?
+2. From what country is this league ? (picture liga mx) 
+3. From what country is this league ? (picture liga santander) 
+4. From what country is this league ? (picture bundesliga) 
+5. From what country is this league ? (picture liga nos) 
+1. What club is this ? (psg)
+2. What club is this ? (barcelona) 
+3. What club is this ? (man city) 
+4. What club is this ? (borussia dortmand) 
+5. What club is this ? (picture ac milan) 
+1. Who is this icon ? (pele) 
+2. Who is this icon ? (maradona)
+3. Who is this icon ? (ronaldo) 
+4. Who is this icon ? (cruyff) 
+5. Who is this icon ? (eusabio) 

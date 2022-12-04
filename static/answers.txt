@@ -1,0 +1,25 @@
+1. ans: neymar
+2. ans: ronaldo
+3. ans: messi
+4. ans: lewandowski
+5. ans: virgil van dijk
+1. ans: france
+2. ans: qatar
+3. ans: qatar vs ecuador
+4. ans: brazil
+5. ans: japan
+1. ans: premier league
+2. ans: liga mx
+3. ans: liga santander
+4. ans: bundesliga
+5. ans: liga nos 
+1. ans: paris saint germain
+2. ans: barcelona
+3. ans: manchester city
+4. ans: borussia dortmand
+5. ans: ac milan 
+1. ans: pele
+2. ans: maradona
+3. ans: ronaldo
+4. ans: cruyff
+5. ans: eusabio
